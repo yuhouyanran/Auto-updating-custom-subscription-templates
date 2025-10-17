@@ -8,6 +8,8 @@ on:
   # 使用 cron 语法定时触发，这里是每6小时一次
   schedule:
     - cron: '0 */6 * * *'
+permissions:
+  contents: write
 
 jobs:
   build-and-commit:
